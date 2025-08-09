@@ -1,13 +1,22 @@
 [tool.poetry]
 name = "streamlit-tool"
 version = "0.1.0"
-description = ""
-authors = []
+description = "A Streamlit tool for website content similarity"
+authors = ["Your Name <you@example.com>"]
+package-mode = false  # <- This disables installing it as a package
 
 [tool.poetry.dependencies]
 python = "^3.9"
 streamlit = "^1.48.0"
-# add other dependencies here if needed
+pandas = "^2.3.1"
+numpy = "^2.3.2"
+scikit-learn = "^1.7.1"
+requests = "^2.32.4"
+altair = "^5.5.0"
+plotly = "^6.2.0"
+pydeck = "^0.9.1"
+watchdog = "^6.0.0"
 
-# Add this line to disable packaging the current project
-package-mode = false
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
