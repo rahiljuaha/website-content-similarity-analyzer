@@ -43,10 +43,6 @@ A powerful Streamlit web application that analyzes content similarity between yo
 - **Visualizations**: Plotly for interactive charts and graphs
 - **Text Processing**: Regular expressions and string manipulation for content cleaning
 
-## Installation & Setup
-
-### For Replit (Recommended)
-The app is ready to run on Replit with all dependencies pre-installed.
 
 ### For Local Development
 1. Clone the repository
@@ -87,16 +83,6 @@ The app is ready to run on Replit with all dependencies pre-installed.
 4. Re-analyze monthly to track improvements
 5. Implement 1-2 recommendations at a time
 
-## File Structure
-
-```
-├── app.py                 # Main Streamlit application
-├── dependencies.txt       # Required Python packages
-├── README.md             # This file
-├── replit.md             # Project configuration and preferences
-└── .streamlit/
-    └── config.toml       # Streamlit configuration
-```
 
 ## Contributing
 
