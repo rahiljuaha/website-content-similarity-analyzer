@@ -1,115 +1,133 @@
-# Website Content Similarity Analyzer
+# 📊 Website Content Similarity Analyzer
 
-A powerful Streamlit web application that analyzes content similarity between your website and competitors using advanced machine learning techniques.
+A powerful Streamlit app that compares your website content with up to three competitors using advanced Natural Language Processing (NLP) techniques. Instantly see similarity scores, keyword overlaps, competitor gaps, and get actionable recommendations to improve your content strategy.
 
-## Features
+---
 
-### Core Analysis
-- **Similarity Scoring**: TF-IDF vectorization with cosine similarity measurement
-- **Keyword Extraction**: Automated identification of important terms and phrases
-- **Competitive Analysis**: Compare your content against up to 3 competitors
-- **Seed Keyword Tracking**: Monitor performance of specific keywords you care about
+## 🚀 Features
 
-### Visualizations
-- **Interactive Charts**: Bar charts for similarity scores
-- **Radar Charts**: Visual comparison of seed keyword performance across all content
-- **Metrics Dashboard**: Clear display of key performance indicators
+- **Content Similarity Analysis:**  
+  Calculates similarity between your site and competitors using TF-IDF vectorization and cosine similarity.
 
-### Advanced Features
-- **Customizable Analysis**: Adjust TF-IDF parameters for fine-tuned results
-- **Sample Data**: Pre-loaded examples to demonstrate functionality
-- **Export Options**: Download reports in Markdown, CSV, and JSON formats
-- **Actionable Insights**: Specific recommendations based on analysis results
+- **Top Keyword Extraction:**  
+  Identifies and ranks your most important keywords.
 
-### User Experience
-- **Comprehensive Guide**: Step-by-step instructions and best practices
-- **Contextual Help**: Pop-up explanations for key concepts
-- **Professional Reports**: Detailed analysis with methodology and recommendations
-- **Mobile-Friendly**: Responsive design that works on all devices
+- **Keyword Overlap & Gap Analysis:**  
+  Shows which keywords you share with competitors and what you're missing.
 
-## How It Works
+- **Seed Keyword Tracking:**  
+  Track your performance across hand-picked "seed" keywords.
 
-1. **Input Content**: Paste text from your website and up to 3 competitors
-2. **Add Keywords**: Optionally specify seed keywords to track
-3. **Configure Settings**: Adjust analysis parameters in the sidebar
-4. **Run Analysis**: Get detailed similarity scores and keyword insights
-5. **Download Reports**: Export results for sharing and further analysis
+- **Interactive Visualizations:**  
+  Includes bar and radar charts for at-a-glance insights.
 
-## Technology Stack
+- **Comprehensive Export:**  
+  Download your analysis as Markdown, CSV, or JSON.
 
-- **Frontend**: Streamlit for interactive web interface
-- **Machine Learning**: Scikit-learn for TF-IDF vectorization and similarity computation
-- **Data Processing**: Pandas for data manipulation and analysis
-- **Visualizations**: Plotly for interactive charts and graphs
-- **Text Processing**: Regular expressions and string manipulation for content cleaning
+- **No Coding Required:**  
+  All analysis done via a friendly Streamlit interface.
 
+---
 
-### For Local Development
-1. Clone the repository
-2. Install dependencies: `pip install -r dependencies.txt`
-3. Run the app: `streamlit run app.py`
+## 🖥️ How to Use
 
-### Dependencies
-- streamlit>=1.28.0
-- scikit-learn>=1.3.0
-- pandas>=2.1.0
-- plotly>=5.15.0
+1. **Install Requirements**
 
-## Usage Guide
+   ```
+   pip install -r requirements.txt
+   ```
 
-### Quick Start
-1. Click "Load Sample Data" to see how the tool works
-2. Replace with your own content and competitors' content
-3. Add relevant seed keywords (optional)
-4. Click "Analyze Similarity"
-5. Review results and download reports
+2. **Run the App**
 
-### Understanding Results
+   ```
+   streamlit run app.py
+   ```
 
-#### Similarity Scores
-- **0-30%**: Unique positioning (good for differentiation)
-- **30-60%**: Balanced approach (industry-relevant but distinct)
-- **60%+**: High similarity (consider differentiation strategies)
+3. **Input Content**
 
-#### Keyword Analysis
-- **Top Keywords**: Most important terms in your content
-- **Overlap Analysis**: Shared terms with competitors
-- **Unique Keywords**: Terms competitors use that you might be missing
+   - Paste your website content and up to three competitors' content.
+   - (Optional) Add "seed keywords" you want to track (comma-separated).
 
-### Best Practices
-1. Use substantial text content (100+ words per competitor)
-2. Focus on homepage or key landing page content
-3. Choose 5-10 relevant seed keywords
-4. Re-analyze monthly to track improvements
-5. Implement 1-2 recommendations at a time
+4. **Configure Analysis (Optional)**
 
+   - Adjust TF-IDF parameters in the sidebar for deeper or broader keyword analysis.
+   - Choose to include bigrams (two-word phrases).
 
-## Contributing
+5. **Analyze & View Results**
 
-This project was built to help businesses understand their competitive positioning through content analysis. Feel free to suggest improvements or report issues.
+   - Click "Analyze Similarity".
+   - View similarity metrics, keyword tables, overlap analysis, and radar charts.
 
-## Use Cases
+6. **Download Your Results**
 
-- **Content Marketing**: Identify gaps and opportunities in your content strategy
-- **SEO Analysis**: Discover keywords you might be missing
-- **Competitive Research**: Understand how your messaging compares to competitors
-- **Brand Positioning**: Ensure your content differentiates your brand effectively
-- **Content Planning**: Make data-driven decisions about future content
+   - Export your findings as Markdown, CSV, or JSON for further analysis or sharing.
 
-## Technical Details
+---
 
-### Analysis Methodology
-1. **Text Preprocessing**: Lowercase conversion, punctuation removal, whitespace normalization
-2. **Vectorization**: TF-IDF with configurable n-gram ranges and frequency thresholds
-3. **Similarity Computation**: Cosine similarity between document vectors
-4. **Keyword Extraction**: TF-IDF score ranking with configurable result counts
+## 📋 Example Use Cases
 
-### Configuration Options
-- Maximum features (500-5000)
-- Document frequency thresholds
-- N-gram ranges (unigrams, bigrams)
-- Top keywords display count
+- **Competitive SEO Benchmarking**
+- **Content Strategy Audits**
+- **Web Copy Differentiation**
+- **Market Positioning Research**
+- **Gap Analysis for Content Development**
 
-## License
+---
 
-This project is designed for educational and business analysis purposes. Please ensure you have permission to analyze any content you input into the tool.
+## 📦 Requirements
+
+- Python 3.7+
+- [`streamlit`](https://streamlit.io/)
+- `scikit-learn`
+- `pandas`
+- `plotly`
+
+Install all dependencies via:
+
+```
+pip install -r requirements.txt
+```
+
+---
+
+## 🧑‍💻 Sample Data Included
+
+Click "Load Sample Data" in the app to see a ready-to-run demo with example marketing agency content.
+
+---
+
+## 📝 Methodology
+
+- **Preprocessing:** Lowercasing, punctuation removal, stopword filtering.
+- **Vectorization:** TF-IDF (unigram/bigram, customizable).
+- **Similarity:** Cosine similarity on TF-IDF vectors.
+- **Keyword Extraction:** Ranked by TF-IDF importance.
+- **Visualization:** Plotly charts for clarity.
+
+---
+
+## 📄 License
+
+MIT License.  
+Free to use, modify, and distribute. Attribution appreciated!
+
+---
+
+## 🙏 Acknowledgments
+
+- Built with [Streamlit](https://streamlit.io/) for rapid prototyping.
+- Powered by [scikit-learn](https://scikit-learn.org/) and [Plotly](https://plotly.com/).
+- Inspired by real-world needs for content differentiation and SEO strategy.
+
+---
+
+## 💡 Tips
+
+- Use substantial, representative text (100+ words per competitor).
+- Compare homepage or key landing page content for best insights.
+- Re-analyze regularly to track improvement.
+
+---
+
+**Ready to get started?**  
+Run `streamlit run app.py` and discover how your site stacks up!
