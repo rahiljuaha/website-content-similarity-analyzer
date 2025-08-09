@@ -1,11 +1,13 @@
-[project]
-name = "repl-nix-workspace"
+[tool.poetry]
+name = "streamlit-tool"
 version = "0.1.0"
-description = "Add your description here"
-requires-python = ">=3.11"
-dependencies = [
-    "pandas>=2.3.1",
-    "plotly>=6.2.0",
-    "scikit-learn>=1.7.1",
-    "streamlit>=1.48.0",
-]
+description = ""
+authors = []
+
+[tool.poetry.dependencies]
+python = "^3.9"
+streamlit = "^1.48.0"
+# add other dependencies here if needed
+
+# Add this line to disable packaging the current project
+package-mode = false
